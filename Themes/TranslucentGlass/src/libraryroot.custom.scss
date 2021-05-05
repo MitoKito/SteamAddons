@@ -1,0 +1,36 @@
+:root {
+  // Common variables
+  --gap: 6px;
+  --roundness: 20px;
+
+  // Background variables
+  --background-image: url('https://source.unsplash.com/9XngoIpxcEo/3840x2160');
+  --background-blur: 5px;
+  --background-size: cover;
+  --background-position: center;
+
+  // Blur Brightness variables
+  --common-brightness: 0.8;
+  --gamelist-brightness: 0.6;
+
+  // Scrollbar variables
+  --scrollbar-track-color: transparent;
+  --scrollbar-track-width: 8px;
+  --scrollbar-handle-width: 8px;
+  --scrollbar-handle-color: rgba(0, 0, 0, 0.5);
+  --scrollbar-handle-roundness: 7px;
+
+  // Context menu variables
+  --context-roundness: 6px;
+}
+
+@import 'root';
+@import 'utils/keyframe';
+@import 'main';
+@import 'scrollbar';
+@import 'contextmenu';
+@import 'sidebar';
+@import 'gamepage';
+@import 'library';
+@import 'collections';
+@import 'soundtracks';

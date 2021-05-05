@@ -1,0 +1,24 @@
+// Background blur
+.library_Container_3xRRJ:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--background-image);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  filter: blur(var(--background-blur));
+  box-shadow: inset 0 0 0 10000px rgba(0, 0, 0, var(--gamelist-brightness));
+  height: calc(100vh + (var(--background-image-blur) * 2));
+  width: calc(100vw + (var(--background-image-blur) * 2));
+}
+
+// Fix the z-index problem cause by the background blur
+.gamelistbar_Container_3x1Hk,
+.library_MainPanel_3BFcm {
+  z-index: 1;
+}

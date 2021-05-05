@@ -1,0 +1,12 @@
+:root {
+  --background-image: url("https://source.unsplash.com/9XngoIpxcEo/3840x2160");
+  --background-blur: 5px;
+  --background-size: cover;
+  --background-position: center;
+}
+
+html {
+  background: #141414 !important;
+}
+
+/*# sourceMappingURL=libraryroot.custom.css.map */

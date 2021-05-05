@@ -1,0 +1,105 @@
+.gamelistbar_Container_3x1Hk {
+  background: transparent;
+}
+
+// Home and Collection
+.gamelistbar_GameListHomeAndSearch_2TKEa {
+  padding: var(--gap);
+  padding-bottom: 0;
+  background: transparent;
+  height: auto;
+  .gamelisthome_Bar_3pSPl {
+    background: var(--background-secondary);
+    border-radius: var(--roundness);
+  }
+}
+
+// Game Dropdown Container
+.gamelistdropdown_Bar_1ZS_x {
+  padding: var(--gap) var(--gap) 0px;
+
+  // Game/Soundtrack/Software/etc Dropdown
+  .gamelistdropdown_MenuHeader_2PF_m {
+    background: var(--background-secondary);
+    border-radius: var(--roundness);
+    &:hover {
+      background: var(--background-secondary-alt);
+    }
+  }
+
+  // Scrollup Button
+  .gamelistdropdown_ScrollToTop_uE7Pj {
+    background: var(--background-secondary);
+    border-radius: var(--roundness);
+    .SVGIcon_Arrow {
+      background: transparent;
+      border: none;
+    }
+  }
+}
+
+.gamelistsearchbar_Container_20QAC {
+  padding: var(--gap);
+  // Searchbar
+  .gamelistsearchbar_SearchInput_12vo5 {
+    .DialogTextInputBase {
+      background: var(--background-secondary);
+      border-radius: var(--roundness);
+      width: 100%;
+      &:hover {
+        background: var(--background-secondary-alt);
+      }
+    }
+  }
+
+  // Advanced Search Button
+  .gamelistsearchbar_AdvancedSearchContainer_vCCmY {
+    background: var(--background-secondary);
+    border-radius: var(--roundness);
+    margin-left: var(--gap);
+    &:not(.gamelistsearchbar_Disabled_1Gjk2):hover {
+      background: var(--background-secondary-alt);
+    }
+  }
+}
+
+// Game List
+.gamelistsectionheader_Container_2sYIg {
+  background: linear-gradient(to right, var(--background-secondary) 40%, rgba(62, 78, 105, 0) 100%);
+}
+
+.gamelistentry_Container_2-O4Z {
+  &:hover {
+    background: var(--background-secondary-alt);
+  }
+
+  .gamelistentry_Uninstalled_5YTBr {
+    color: #99a1b2;
+  }
+}
+
+.gamelistentry_Container_2-O4Z.gamelistentry_HoverOverlay_3cMVy {
+  background: #000;
+  border-radius: var(--roundness);
+}
+
+.gamelistentry_Selected_1UBpA.gamelistentry_Container_2-O4Z {
+  background: var(--background-secondary);
+  &:hover {
+    background: var(--background-secondary-alt) !important;
+  }
+}
+
+.gamelistsectionheader_Container_2sYIg:hover {
+  background: var(--background-secondary);
+}
+
+// Collections button
+.gamelisthome_CollectionIcon_nC-pL {
+  grid-template-columns: 7px 7px;
+  grid-template-rows: 7px 7px;
+  grid-column-gap: 4px;
+  grid-row-gap: 4px;
+  padding-left: 6px;
+  padding-top: 6px;
+}
